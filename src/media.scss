@@ -1,0 +1,342 @@
+@media screen and (max-width: 974px) {
+    .header {
+
+        position: relative;
+
+        .logo {
+            gap: 10px;
+            :first-child {
+                width: 24px;
+                height: 24px;
+            }
+            :last-child {
+                width: 150px;
+                height: 15px;
+            }
+        }
+
+        .burger {
+            display: block;
+            img {
+                width: 30px;
+            }
+        }
+
+        // .close {
+        //     img {
+        //         width: 20px;
+        //     } 
+        // }
+
+
+        .show {
+            display: none;
+        }
+
+        &-list {
+            position: absolute;
+            justify-content: center;
+            right: 200px;
+            top: 12px;
+            gap: 40px;
+            height: 400px;
+            transform: translate(0%, 0%);
+            flex-direction: column;
+            width: 400px;
+            background-color: black;
+            animation: showw  .3s ease 1;
+        }
+
+        @keyframes showw {
+            0% {
+                right: -400px;
+            }
+            100% {
+                right: 50px;
+            }
+        }
+
+    }   
+    .creators {
+        padding: 60px 0;
+
+        .top {
+            margin-bottom: 40px;
+            h2 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 20px;
+            }
+
+            .btn {
+                padding: 10px 35px;
+            }
+
+
+        }
+        &-list {
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+    }
+
+    .collection {
+        &-products {
+            justify-content: space-evenly;
+        }
+        &-product {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+    .how {
+        .list {
+            justify-content: space-evenly;
+        }
+        .item {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .hero {
+        padding: 40px 0;
+
+        .left {
+            h1 {
+                font-size: 50px;
+            }
+
+        }
+        &-descr {
+            font-size: 20px;
+        }
+        &-list {
+            h4 {
+                font-size: 20px;
+            }
+        }
+        &-back {
+            max-height: 221px;
+        }
+    }
+
+    .collection {
+
+        padding: 40px 0;
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .descr {
+            font-size: 18px;
+        }
+        .collection {
+            gap: 10px;
+            &-product {
+                &:last-child {
+                    display: none;
+
+                }
+                
+            }
+
+        }
+    }
+
+    .creators {
+        padding: 40px 0;
+
+        .top {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 36px;
+                margin-bottom:5px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .btn {
+                padding: 7px 30px;
+            }
+        
+        }
+        &-list {
+            gap: 10px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        &-item {
+            display: flex;
+            text-align: left;
+            max-width: 330px;
+            align-items: center;
+            padding: 10px 20px;
+            .count {
+                font-size: 12px;
+                width: 17px;
+                height: 20px;
+            }
+            img {
+                width: 60px;
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+
+            .title {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .categories {
+        padding: 40px 0;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        &-list {
+            gap: 10px;
+            // flex-wrap: nowrap;
+            li {
+                max-width: 150px;
+                font-size: 20px;
+                .block {
+                    height: 142px;
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        .content {
+            flex-direction: column;
+        }
+    }
+
+    .create {
+        gap: 30px;
+
+        .bg {
+            max-width: 397px;
+            height: 615px;
+        }
+        .box {
+            max-width: 397px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .inputs {
+            gap: 15px;
+        }
+
+
+    }
+
+    .artist {
+        .profile {
+            h2 {
+                font-size: 30px;
+            }
+            .shares {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+            }
+            .block {
+                &-list {
+                    li {
+                        p {
+                            font-size: 16px;
+                            &:first-child {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .create {
+        flex-direction: column;
+        text-align: center;
+
+        .bg {
+            max-width: 100%;
+            max-height: fit-content;
+        }
+
+        .box {
+            margin-bottom: 30px;
+        }
+
+        .create,input {
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .creators {
+        padding: 20px 0;
+
+        .top {
+            margin-bottom: 10px;
+
+            h2 {
+                font-size: 26px;
+                margin-bottom:5px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 5px 20px;
+            }
+        
+        }
+        &-list {
+            gap: 5px;
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        &-item {
+            padding: 10px 20px;
+            .count {
+                font-size: 12px;
+                width: 17px;
+                height: 20px;
+            }
+            img {
+                width: 60px;
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 974px) {
     .header {
 
@@ -34,9 +35,11 @@
         }
 
         &-list {
+            z-index: 100;
             position: absolute;
             justify-content: center;
-            right: 200px;
+            border-radius: 20px;
+            right: 50px;
             top: 12px;
             gap: 40px;
             height: 400px;
@@ -82,16 +85,6 @@
         }
     }
 
-    .collection {
-        &-products {
-            justify-content: space-evenly;
-        }
-        &-product {
-            &:last-child {
-                display: none;
-            }
-        }
-    }
     .how {
         .list {
             justify-content: space-evenly;
@@ -102,6 +95,25 @@
             }
         }
     }
+
+    .categories {
+        &-list {
+            li {
+                .block {
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    .how {
+        padding: 40px 0;
+
+        h2 {
+            font-size: 36px;
+        }
+
+    }
 }
 
 @media screen and (max-width: 834px) {
@@ -109,6 +121,7 @@
         padding: 40px 0;
 
         .left {
+            padding-right: 330px;
             h1 {
                 font-size: 50px;
             }
@@ -122,7 +135,12 @@
                 font-size: 20px;
             }
         }
+        .right {
+            max-width: 330px;
+            max-height: 330px;
+        }
         &-back {
+            width: 100%;
             max-height: 221px;
         }
     }
@@ -143,7 +161,6 @@
             &-product {
                 &:last-child {
                     display: none;
-
                 }
                 
             }
@@ -217,6 +234,33 @@
         }
     }
 
+    .nft {
+        padding: 40px 0;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        &-list {
+            gap: 10px;
+            li {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .magic {
+        .container {
+            .bottom {
+                h2 {
+                    font-size: 36px;
+                }
+            }
+        }
+        
+    }
+
     .footer {
         .content {
             flex-direction: column;
@@ -273,31 +317,297 @@
         }
 
     }
+
+    .join  {
+        padding: 40px 0;
+        h2 {
+            font-size: 36px;
+        }
+        .box {
+            padding:  25px;
+        }
+        .block {
+            button {
+                margin-top: 10px;
+                position: static;
+                width: 100%;
+            }
+            div {
+                position: static;
+            }
+        }
+
+    }
+
+
+
+    .products {
+        padding: 40px 0;
+        grid-template-columns: repeat(2,1fr);
+        .product {  
+            .end {
+                padding: 15px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+            .block {
+                span {
+                    font-size: 12px;
+                }
+            }
+            .price {
+                .first {
+                    font-size: 16px;
+                }
+                .last {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .rank {
+        li {
+            height: 60px;
+        }
+        .count {
+            background: none;
+            font-size: 12px;
+        }
+        .person {
+            img {
+                width: 24px;
+            }
+            font-size: 14px;
+        }
+
+        .change {
+            font-size: 12px;
+            width: 100%;
+            max-width: 100px;
+        }
+
+        .sold {
+            display: none;
+            font-size: 12px;
+            width: 100%;
+            max-width: 100px;
+        }
+
+        .volume {
+            font-size: 12px;
+            width: 100%;
+            max-width: 100px;
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .categories {
+        &-list {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+    }
+    .magic {
+        .container {
+            .top {
+                margin-bottom: 20px;
+            }
+            .bottom {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            .right {
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+
+    .join {
+        padding: 20px 0;
+        .box {
+            padding: 30px 30px;
+            display: block;
+            >img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+       .block { 
+            width: 100%;
+       }
+    }
+
+
+
 }
 
 
+
 @media screen and (max-width:600px) {
+    .hero {
+        padding: 20px 0;
+        .right {
+            max-width: 100%;
+            position: static;
+        }
+        .left {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        &-back {
+            width: 100%;
+            
+            max-height: 206px;
+        }
+        &-btn {
+            width: 100%;
+        }
+        &-list {
+            justify-content: space-between;
+        }
+    }
     .create {
         flex-direction: column;
         text-align: center;
 
         .bg {
             max-width: 100%;
-            max-height: fit-content;
+            max-height: 300px;
         }
 
         .box {
             margin-bottom: 30px;
+            padding: 15px;
+            .item {
+                width: 100%;
+            }
         }
 
         .create,input {
             margin: 0 auto;
         }
     }
-}
-@media screen and (max-width: 500px) {
     .creators {
         padding: 20px 0;
+        .container {
+            position: relative;
+            padding-bottom: 80px;
+        }
+        &-list {
+            gap: 10px;
+            grid-template-columns: repeat(1,1fr);
+        }
+        &-item {
+            max-width: 100%;
+        }
+        .right {
+            position: absolute;
+            bottom: 0;
+            padding: 0 40px 0 0 ;
+            width: 95%;
+            .btn { 
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .top {
+
+
+        }
+    }
+    .nft {
+        .container {
+            position: relative;
+            padding-bottom: 80px;
+        }
+        .top {
+            .btn {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                max-width: 520px;
+                padding: 20px 30px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .how {
+        .item {
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .rank {
+        nav {
+            .link {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .header {
+        padding-block: 10px;
+        nav {
+            
+        }
+        &-list {
+            right: 0;        
+            width: 100%;
+            top: 100%; 
+        }
+    }
+
+    .hero {
+        .left {
+            gap: 10px;
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+        &-descr {
+            font-size: 14px;
+        }
+    }
+
+    .collection {
+        h2 {
+            font-size: 26px;
+        }
+        &-products {
+            justify-content: center;
+        }
+        &-product {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .creators {
 
         .top {
             margin-bottom: 10px;
@@ -336,6 +646,227 @@
             .title {
                 font-size: 16px;
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .categories {
+        &-list {
+            grid-template-columns: repeat(2,2fr);
+            width: 100%;
+            gap: 10px;
+            li {
+                
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .nft {
+        .container {
+            position: relative;
+            padding-bottom: 80px;
+        }
+        &-list {
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .top {
+            .btn {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                width: 88%;
+                max-width: 520px;
+                padding: 20px 30px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .magic {
+        .container {
+            .top {
+                margin-bottom: 20px;
+            }
+            .bottom {
+                display: block;
+                h2 {
+                    margin-bottom: 20px;
+                }
+                .block {
+                    width: 100%;
+                }
+            }
+            .right {
+                position: static;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+        
+    }
+    .how {
+        .list {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .footer {
+        .box {
+
+            li {
+                div {
+                    position: static;
+                    height: auto;
+                    input {
+                        height: 50px;
+                    }
+                    button {
+                        margin-top: 10px;
+                        height: 50px;
+                        width: 100%;
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .products {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .product {  
+            .end {
+                padding: 15px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+            .block {
+                span {
+                    font-size: 12px;
+                }
+            }
+            .price {
+                .first {
+                    font-size: 16px;
+                }
+                .last {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .my-products {
+        .nav {
+            .link {
+                span {
+                    &:last-child {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .rank {
+        .nav {
+            .link {
+                span {
+                    &:last-child {
+                        display: block;
+                    }
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+        li {
+            height: 60px;
+            padding-left: 15px;
+        }
+        .first {
+            padding-left: 15px;
+
+        }
+        .count {
+            background: none;
+            font-size: 12px;
+            margin-right: 2px;
+        }
+        .person {
+            img {
+                width: 24px;
+            }
+            gap: 5px;
+            font-size: 14px;
+        }
+
+        .change {
+            display: none;
+            font-size: 12px;
+            width: 100%;
+            max-width: 60px;
+        }
+
+        .sold {
+            font-size: 12px;
+            width: 100%;
+            max-width: 60px;
+        }
+
+        .volume {
+            font-size: 12px;
+            width: 100%;
+            max-width: 60px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nft {
+        .top {
+            width: 85%;
+        }
+    }
+    .my-products {
+        .nav {
+            .link {
+                span {
+                    font-size: 16px;
+                    &:last-child {
+
+                        font-size: 16px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+    .profile {
+        .shares {
+            .btns {
+                width: 100%;
+                flex-direction: column;
+                button {
+                    justify-content: center;
+                    width: 100%;
+                }
             }
         }
     }

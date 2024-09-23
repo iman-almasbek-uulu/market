@@ -8,6 +8,19 @@ function Hero() {
                 <div className="left">
                     <h1>Discover digital art & Collect NFTs</h1>
                     <p className="hero-descr">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+                    
+                </div>
+                <div className="right">
+                    <div className="hero-back"></div>
+                    <div className="hero-info">
+                        <h6>Space Walking</h6>
+                        <div className="user">
+                            <img src="./images/use.png" alt="" />
+                            <span>Animakid</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="block">
                     <button className="hero-btn"><img src="./images/rocket.png" alt="" /> <span>Get Started</span></button>
                     <ul className="hero-list">
                         <li className="hero__item">
@@ -24,16 +37,7 @@ function Hero() {
                         </li>
                     </ul>
                 </div>
-                <div className="right">
-                    <div className="hero-back"></div>
-                    <div className="hero-info">
-                        <h6>Space Walking</h6>
-                        <div className="user">
-                            <img src="./images/use.png" alt="" />
-                            <span>Animakid</span>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     );

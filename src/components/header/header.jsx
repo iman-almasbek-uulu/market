@@ -25,14 +25,14 @@ function Header() {
             </NavLink>
           </li>
           <li className="header-list__item">
-            <a className="header-list__link" href="">
+            <NavLink to="/rank" className="header-list__link" >
               Rankings
-            </a>
+            </NavLink>
           </li>
           <li className="header-list__item">
-            <a className="header-list__link" href="">
+            <NavLink to="/connect" className="header-list__link" href="">
               Connect a wallet
-            </a>
+            </NavLink>
           </li>
           <li className="header-list__item">
             <NavLink to="create" className="header-list__link active" href="">

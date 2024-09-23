@@ -11,8 +11,9 @@ function Collection() {
                 <p className="descr">Checkout our weekly updated trending collection.</p>
                 <div className="collection-products">
                     <div className="collection-product">
+                        <li className="big"><img src="images/item.jpg" alt="" /></li>
+                        
                         <ul className="collection-list">
-                            <li className="big"><img src="images/item.jpg" alt="" /></li>
                             <li><img src="images/item2.jpg" alt="" /></li>
                             <li><img src="images/item3.jpg" alt="" /></li>
                             <li><img src="images/item4.jpg" alt="" /></li>
@@ -24,8 +25,9 @@ function Collection() {
                         </div>
                     </div>
                     <div className="collection-product">
+                        <li className="big"><img src="images/item5.jpg" alt="" /></li>
+
                         <ul className="collection-list">
-                            <li className="big"><img src="images/item5.jpg" alt="" /></li>
                             <li><img src="images/item6.jpg" alt="" /></li>
                             <li><img src="images/item7.png" alt="" /></li>
                             <li><img src="images/item8.jpg" alt="" /></li>
@@ -37,8 +39,9 @@ function Collection() {
                         </div>
                     </div>
                     <div className="collection-product">
+                        <li className="big"><img src="images/item5.jpg" alt="" /></li>
+                        
                         <ul className="collection-list">
-                            <li className="big"><img src="images/item5.jpg" alt="" /></li>
                             <li><img src="images/item6.jpg" alt="" /></li>
                             <li><img src="images/item7.png" alt="" /></li>
                             <li><img src="images/item8.jpg" alt="" /></li>

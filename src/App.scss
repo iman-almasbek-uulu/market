@@ -80,14 +80,13 @@ a {
     padding: 80px 0;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        position: relative;
     }
 
     .left {
         width: 100%;
-        max-width: 510px; 
         display: flex;
+        padding-right: 510px;
         flex-direction: column;
         gap: 40px;
         h1 {
@@ -100,6 +99,12 @@ a {
         font-weight: 300;
     }
 
+    .block {
+        margin-top: 30px;
+        max-width: 510px; 
+        width: 100%;
+    }
+
     &-btn {
         background-color: #A259FF;
         color: #fff;
@@ -108,13 +113,14 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 30px;
         border-radius: 30px;
         cursor: pointer;
     }
 
     &-list {
         display: flex;
-        justify-content: space-between;
+        gap: 50px;
         align-items: start;
         h4 {
             font-size: 24px;
@@ -126,7 +132,9 @@ a {
         width: 100%;
         max-width: 510px;
         border-radius: 40px;
-
+        position: absolute;
+        right: 30px;
+        top: 0;
         .user {
             display: flex;
             align-items: center;
@@ -139,6 +147,9 @@ a {
         width: 100%;
         height: 401px;
         background-image: url(../public/images/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     &-info {
         padding: 15px;
@@ -169,29 +180,35 @@ a {
     &-products {
         display: flex;
         justify-content: space-between;
-        
+        gap: 20px;
     }
 
     &-product {
 
     }
 
+    .big {
+        list-style: none;
+        img {
+            border-radius: 30px;
+            
+            width: 100%;
+            max-width: 330px;
+        }
+    }
     &-list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        width: 330px;
+        gap: 10px;
+        width: 100%;
+        max-width: 330px;
         margin-bottom: 20px;
-        .big {
-            img {
-                width: 330px;
-            }
-        }
+
 
         li {
             img {
                 border-radius: 30px;
-                width: 100px;
+                width: 100%;
+                max-width: 100px;
 
             }
 
@@ -295,6 +312,7 @@ a {
         .title {
             font-size: 28px;
             margin-bottom: 10px;
+            color: white;
         }
         .key {
             color: #858584;
@@ -314,9 +332,8 @@ a {
     }
 
     &-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         gap: 20px;
 
         li {
@@ -408,8 +425,11 @@ a {
         li {
             width: 100%;
             max-width: 330px;
+            height: 100%;
+            min-height: 460px;
             background-color: #3B3B3B;
             border-radius: 20px;
+            padding-bottom: 20px;
             .img {
                 height: 296px;
                 width: 100%;
@@ -417,10 +437,7 @@ a {
             }
             .end {
                 padding: 20px;
-                width: 100%;
-                height: 173px;
                 border-radius: 20px;
-
             }
             h4 {
                 font-size: 24px;
@@ -488,6 +505,7 @@ a {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
 
             h2 {
                 font-size: 46px;
@@ -511,14 +529,19 @@ a {
         }
 
         .right {
-            width: 295px;
+            width: 100%;
+            max-width: 295px;
             height: 145px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #3b3b3b;
+            background: #3b3b3b9a;
+            border-radius: 20px;
             gap: 5px;
             padding: 0 20px;    
+            position: absolute;
+            right: 0%;
+            top: 0;
 
             .times {
                 margin-top: 5px;
@@ -554,7 +577,8 @@ a {
         display: flex;
         gap: 20px;
         .item {
-            width: 330px;
+            width: 100%;
+            max-width: 330px;
             background-color: #3B3B3B;
             border-radius: 20px;
             padding: 20px;
@@ -564,8 +588,9 @@ a {
             align-items: center;
             img {
                 border-radius: 20px;
-                width: 250px;
-                height: 250px;
+                height: auto;
+                width: 100%;
+                max-width: 250px;
             }
             h3 {
                 font-size: 24px;
@@ -581,7 +606,6 @@ a {
 
 .join {
     padding: 80px 0;
-     
     h2 {
         font-size: 40px;
         margin-bottom: 15px;
@@ -600,16 +624,20 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        >img {
+            width: 50%;
+            height: auto;
+        }
     }
 
     .block {
-        width: 425px;
-
+        min-height: 260px;
+        width: 45%;
         div {
             width: 100%;
             border-radius: 20px;
             position: relative;
-            height: 60px;
         }
         input {
             width: 100%;
@@ -617,13 +645,14 @@ a {
             background-color: #fff;
             border: none;
             border-radius: 20px;
-            height: 100%;
+            padding: 20px 30px;
             outline: none;
         }
         button {
             position: absolute;
             background-color: #A259FF;
             border-radius: 20px;    
+            padding: 20px 30px;
             right: 0;
             font-size: 16px;
             color: #fff;
@@ -776,6 +805,17 @@ a {
             border: 0;
             color: white;
         }
+
+        .item {
+            width: 320px;
+            border: 1px solid #A259FF;
+            border-radius: 25px;
+            height: 72px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 0 20px 0 40px;
+        }
     }
 }
 
@@ -903,6 +943,7 @@ a {
     }
 }
 
+
 .products {
     padding: 80px 0;
     display: grid;
@@ -911,17 +952,17 @@ a {
     .product {
         width: 100%;
         max-width: 330px;
-        background-color: #3B3B3B;
+        background-color: #2B2B2B;
         border-radius: 20px;
         .img {
-            height: 296px;
+            height: auto;       
             width: 100%;
             border-radius: 20px;
         }
         .end {
             padding: 20px;
             width: 100%;
-            height: 173px;
+            // height: 173px;
             border-radius: 20px;
     
         }
@@ -934,6 +975,8 @@ a {
             align-items: center;
             gap: 10px;
             margin-bottom: 20px;
+            background-color: #2B2B2B;
+
             img {
                 border-radius: 20px;
                 width: 24px;
@@ -944,15 +987,21 @@ a {
             align-items: center;
             justify-content: space-between;
     
+            .price {
+                .first {
+                    font-size: 18px;
+                    color: #858584;
+                    margin-bottom: 5px;
+                }
+                .last {
+                    font-size: 22px;
+                    margin: 0;
+                }
+            }
         }
-        .first {
-            font-size: 18px;
-            color: #858584;
-            margin-bottom: 5px;
-        }
-        .last {
-            font-size: 22px;
-        }
+
+
+
     }
 }
 
@@ -1132,6 +1181,109 @@ a {
         .active {
             color: white;
         }
+    }
+
+    .product {
+        background-color: #3B3B3B;
+        .end {
+            .block {
+                background-color: #3B3B3B;
+            }
+        }
+    }
+}
+
+.rank {
+    h2 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 700;
+            gap: 10px;
+            max-width: 350px;
+            width: 100%;
+
+            span {
+                &:last-child {
+                    display: none;
+                }
+            }
+        } 
+        .active {
+            color: white;
+        }
+    }
+    li,.first {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 85px;
+        width: 100%;
+        background-color: #3B3B3B;
+        padding-left: 30px;
+        border-radius: 30px;
+    }
+    .first {
+        background: none;
+        border: 1px solid #3B3B3B;
+        height: 46px;
+    }
+    .count {
+        font-size: 14px;
+        padding: 7px 12px;
+        background-color: #2B2B2B;
+        color: white;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+    .person {
+        width: 100%;
+        max-width: 380px;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 60px;
+            border-radius: 30px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .change {
+        color: green;
+        width: 100%;
+        max-width: 160px;
+    }
+    
+    .sold {
+        
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .volume {
+        width: 100%;
+        max-width: 100px;
+
+    }
+    .list {
+
+
+
     }
 }
 

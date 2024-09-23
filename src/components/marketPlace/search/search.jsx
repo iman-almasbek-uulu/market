@@ -8,7 +8,7 @@ function Search() {
             <h2>Browse Marketplace</h2>
             <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
             <div className="block">
-                <input type="text" placeholder="Search for products, brands, or collections" />
+                <input type="text" placeholder="Search your favourite NFTs" />
                 <button><img src="/public/images/search.png" alt="" /></button>
             </div>
         </div>

@@ -8,6 +8,8 @@ import Create from "./components/create/create";
 import Artist from "./components/artist/artist";
 import NftPages from "./components/NftPage/NftPage";
 import Market from "./components/marketPlace/marketPlace";
+import Connect from "./components/connect/create";
+import Rank from "./components/rank/rank";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/create" element={<Create />} />
           <Route path="/nft/*" element={<NftPages />} />
           <Route path="/market/*" element={<Market />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/rank/*" element={<Rank />} />
         </Routes>
       </main>
       <Footer />
